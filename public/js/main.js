@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import store from "./store/configueStore";
-import Conversion from './components/conversion.js';
+import Conversion from './Container/Conversion.js';
+import { Provider } from "react-redux";
+
 
 class MainComponent extends React.Component {
-    componentDidMount(){
-        this.setState({})
-    }
     render() {
         return (
             <div>
-                <Conversion originAmount={store.getState().originAmount} />
+                <Conversion />
             </div>
         )
     }
 }
 
 
-ReactDOM.render(<MainComponent />, document.getElementById('container'));
+ReactDOM.render(<Provider store={store}><MainComponent /></Provider>, document.getElementById('container'));
