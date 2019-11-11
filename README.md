@@ -1,4 +1,7 @@
 ## Instructions
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Usamaliaquat123/ReduxPrac.svg)](https://greenkeeper.io/)
+
 - `npm install`
 - `npm start`
 - pull up `http://localhost:3000`
